@@ -1,0 +1,23 @@
+name:                bruteforce
+version:             0.1.0.0
+
+
+dependencies:
+- base >= 4.7 && < 5
+- cryptohash
+- bytestring
+- base16-bytestring
+- parallel
+
+
+executables:
+  bruteforce-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -O2
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+
+

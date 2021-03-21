@@ -1,0 +1,26 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 88213aef0073e4fe9680b6aa8b014b4a801f1a206e28ac86e83ef4a5b40d1019
+
+name:           bruteforce
+version:        0.1.0.0
+build-type:     Simple
+
+executable bruteforce-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_bruteforce
+  hs-source-dirs:
+      app
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , base16-bytestring
+    , bytestring
+    , cryptohash
+    , parallel
+  default-language: Haskell2010
